@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+{% block content %}
+
+<head><title>home</title></head>
+<body><header>
+      <div class="container">
+		
+	<h1 class="logo">Posts</h1></header></body></div>
+<div align="center">
+{% for j in value %}
+<p>Post No:{{ j.id }}</p></div>
+
+<div align="center">
+<b>Title:<font size='20' face="Comic sans MS" color="white"><p>{{ j.title }}</p></font></b></h1></div>
+<div align="center">
+<p><font face="Times New Roman" size='5' color="white">{{ j.post }}</font></p><div>
+<div align="center"><p><font face="Times New Roman" size='2' color="white">Date:{{ j.day }} Time:{{ j.time }}</font></p>
+</div>
+<br>
+{% endfor %}
+{% endblock %}
+
+
+
+
